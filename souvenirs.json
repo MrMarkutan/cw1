@@ -1,0 +1,49 @@
+[ {
+  "title" : "Eagles",
+  "manufacturer" : {
+    "title" : "Tiki Missala",
+    "country" : "ZB"
+  },
+  "release" : [ 2000, 12, 21 ],
+  "price" : 10.0
+}, {
+  "title" : "New Souvenir2",
+  "manufacturer" : {
+    "title" : "FAQ MAKA FO",
+    "country" : "GB"
+  },
+  "release" : [ 2023, 10, 20 ],
+  "price" : 19.5
+}, {
+  "title" : "qweqem",
+  "manufacturer" : {
+    "title" : "wkkk",
+    "country" : "uw"
+  },
+  "release" : [ 2090, 3, 8 ],
+  "price" : 399.0
+}, {
+  "title" : "Souvenir",
+  "manufacturer" : {
+    "title" : "Tiki Missala",
+    "country" : "ZB"
+  },
+  "release" : [ 2022, 3, 30 ],
+  "price" : 2349.0
+}, {
+  "title" : "New Souvenir1",
+  "manufacturer" : {
+    "title" : "New Manufacturer Title",
+    "country" : "ZL"
+  },
+  "release" : [ 2023, 10, 19 ],
+  "price" : 50.0
+}, {
+  "title" : "Souvenir",
+  "manufacturer" : {
+    "title" : "Manufacturer Title",
+    "country" : "UA"
+  },
+  "release" : [ 2022, 10, 19 ],
+  "price" : 100.0
+} ]
