@@ -63,7 +63,7 @@ public class SouvenirService {
         Optional<Souvenir> optional = souvenirs.stream()
                 .filter(s -> title.equals(s.title()))
                 .findFirst();
-        return optional.orElseThrow(() -> new SouvenirNotFoundException(title + " souvenir was not found."));
+        return optional.orElseThrow(() -> new SouvenirNotFoundException(title + " was not found."));
     }
 
     public List<Souvenir> listSouvenirsByManufacturer(Manufacturer manufacturer) {
@@ -113,11 +113,11 @@ public class SouvenirService {
                 Optional.of(newPrice));
     }
 
-    public Souvenir updateSouvenir(String title,
-                                   Optional<String> newTitle,
-                                   Optional<Manufacturer> newManufacturer,
-                                   Optional<LocalDate> newReleaseDate,
-                                   Optional<Double> newPrice) {
+    private Souvenir updateSouvenir(String title,
+                                    Optional<String> newTitle,
+                                    Optional<Manufacturer> newManufacturer,
+                                    Optional<LocalDate> newReleaseDate,
+                                    Optional<Double> newPrice) {
         Souvenir souvenir = getSouvenirByTitle(title);
         souvenirs.remove(souvenir);
         if (newTitle.isPresent()) {
