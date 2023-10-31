@@ -57,7 +57,10 @@ public class Main {
 
     private void menu() {
         while (true) {
-            printMenuOptions("Main Menu", "Souvenirs", "Manufacturers", "Exit");
+            System.out.println("Main Menu");
+            List<String> menuList = List.of("Souvenirs", "Manufacturers");
+            IntStream.range(0, menuList.size()).forEach(i-> System.out.println((i+1) + ". " + menuList.get(i)));
+            System.out.println("0. Exit");
             int choice = userInput();
             if (choice == 0) {
                 shutdown();
