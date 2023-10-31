@@ -11,10 +11,15 @@ import java.util.List;
 import java.util.Map;
 
 public class SouvenirController {
-    private final SouvenirService souvenirService;
+    private SouvenirService souvenirService;
 
     public SouvenirController() {
         this.souvenirService = SouvenirService.getInstance();
+    }
+
+    //for testing only
+    public void setSouvenirService(SouvenirService souvenirService) {
+        this.souvenirService = souvenirService;
     }
 
     public List<Souvenir> getSouvenirs() {
